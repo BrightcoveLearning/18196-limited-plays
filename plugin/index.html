@@ -3,13 +3,27 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Untitled Document</title>
+  <title>Brightcove Player Sample: Limited Plays</title>
 </head>
 
 <body>
+  <!-- Player embed code with an id attribute -->
+  <video id="myPlayerID"
+    style="width: 640px; height: 360px;"
+    data-video-id="4845798282001"
+    data-account="1752604059001"
+    data-player="default"
+    data-embed="default"
+    class="video-js"
+    controls></video>
+  <script src="//players.brightcove.net/1752604059001/default_default/index.min.js"></script>
 
+  <!-- Display the number of video views the user has watched -->
+  <p>Number of views = <span id="cookieDisplay1"></span></p>
 
+  <!-- Custom script for limited plays-->
+  <script type="text/javascript" src="limited-plays.js"></script>
+  <script>videojs('myPlayerID').limitedPlays();</script>
 
 </body>
-
 </html>
