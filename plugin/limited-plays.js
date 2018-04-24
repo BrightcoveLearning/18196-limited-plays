@@ -23,7 +23,7 @@ videojs.registerPlugin('limitedPlays', function() {
         }
     });
 
-    // Display the cookie value
+    // Display the cookie value - comment out the next line when using the iframe implementation
     document.getElementById("cookieDisplay1").innerHTML = cookie;
     // If the cookie value is greater than or equal to 2, then display the custom error message
     if (cookie != null && cookie >= 2) {
